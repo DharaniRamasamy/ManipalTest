@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="139735" started-at="2019-12-04T20:40:34 IST" finished-at="2019-12-04T20:42:54 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="139735" started-at="2019-12-04T20:40:34 IST" finished-at="2019-12-04T20:42:54 IST">
+      <class name="week1.ElearningTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:week1.ElearningTest@79be0360]" name="setUpBeforeClass" is-config="true" duration-ms="19" started-at="2019-12-04T20:40:34 IST" finished-at="2019-12-04T20:40:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:week1.ElearningTest@79be0360]" name="setUp" is-config="true" duration-ms="23103" started-at="2019-12-04T20:40:35 IST" finished-at="2019-12-04T20:40:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="registerForCourse_ELTC_013()[pri:0, instance:week1.ElearningTest@79be0360]" name="registerForCourse_ELTC_013" duration-ms="24686" started-at="2019-12-04T20:40:58 IST" finished-at="2019-12-04T20:41:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerForCourse_ELTC_013 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:week1.ElearningTest@79be0360]" name="tearDown" is-config="true" duration-ms="1746" started-at="2019-12-04T20:41:22 IST" finished-at="2019-12-04T20:41:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:week1.ElearningTest@79be0360]" name="setUp" is-config="true" duration-ms="21851" started-at="2019-12-04T20:41:24 IST" finished-at="2019-12-04T20:41:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="displayRegisteredCourseDetails_ELTC_014()[pri:1, instance:week1.ElearningTest@79be0360]" name="displayRegisteredCourseDetails_ELTC_014" duration-ms="25082" started-at="2019-12-04T20:41:46 IST" finished-at="2019-12-04T20:42:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayRegisteredCourseDetails_ELTC_014 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:week1.ElearningTest@79be0360]" name="tearDown" is-config="true" duration-ms="1764" started-at="2019-12-04T20:42:11 IST" finished-at="2019-12-04T20:42:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:week1.ElearningTest@79be0360]" name="setUp" is-config="true" duration-ms="21821" started-at="2019-12-04T20:42:13 IST" finished-at="2019-12-04T20:42:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logoutTest_ELTC_015()[pri:2, instance:week1.ElearningTest@79be0360]" name="logoutTest_ELTC_015" duration-ms="17842" started-at="2019-12-04T20:42:35 IST" finished-at="2019-12-04T20:42:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest_ELTC_015 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:week1.ElearningTest@79be0360]" name="tearDown" is-config="true" duration-ms="1768" started-at="2019-12-04T20:42:52 IST" finished-at="2019-12-04T20:42:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- week1.ElearningTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
