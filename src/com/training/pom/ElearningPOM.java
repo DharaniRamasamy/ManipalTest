@@ -25,8 +25,14 @@ public class ElearningPOM {
 	@FindBy(xpath="//a[@class='dropdown-toggle']//span[@class='caret']")
 	private WebElement ProfileDropDown; 
 	
+	@FindBy(linkText="Inbox")
+	private WebElement dropdown1Inbox; 
+	
+	@FindBy(linkText="My certificates")
+	private WebElement dropdown2MyCertificates; 
+	
 	@FindBy(xpath="//a[@id='logout_button']")
-	private WebElement logout;
+	private WebElement dropdown3Logout;
 	
 	@FindBy(linkText="Course catalog")
 	private WebElement courseCatalogbtn;
@@ -76,8 +82,23 @@ public class ElearningPOM {
 		this.ProfileDropDown.click(); 
 	}
 	
+	public String getdropdown1Inbox()
+	{
+		return this.dropdown1Inbox.getText();
+	}
+	 
+	public String getdropdown2MyCertificates()
+	{
+		return this.dropdown2MyCertificates.getText();
+	}
+	
+	public String getdropdown3Logout()
+	{
+		return this.dropdown3Logout.getText();
+	}
+	
 	public void clickLogout() {
-		this.logout.click();
+		this.dropdown3Logout.click();
 	}
 	
 	public void clickCourseCatalogbtn() {
