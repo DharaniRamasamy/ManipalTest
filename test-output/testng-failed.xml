@@ -7,8 +7,8 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="logoutTest_ELTC_015"/>
           <include name="setUpBeforeClass"/>
-          <include name="registerForCourse_ELTC_013"/>
         </methods>
       </class> <!-- week1.ElearningTest -->
     </classes>
