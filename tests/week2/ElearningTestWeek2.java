@@ -205,11 +205,11 @@ public class ElearningTestWeek2 {
 		String expQue1=properties.getProperty("question1");
 		String expQue2=properties.getProperty("question2");
 		screenShotWeek2 = new ScreenShotWeek2(driver);
-		
+		String tcNumber="ELTC_041";
 		elearningPOMWeek2.login(studentUserName,studentPwd);
 		Thread.sleep(4000);
 		
-		elearningPOMWeek2.searchAndSubscribeCourse(searchCourseName);
+		elearningPOMWeek2.searchAndSubscribeCourse(searchCourseName,tcNumber);
 		Thread.sleep(4000);
 		
 		elearningPOMWeek2.clickMyCourses();
@@ -264,6 +264,76 @@ public class ElearningTestWeek2 {
 		System.out.println("Test Result should get displayed - verified");
 				
 		System.out.println("End of Test Case ELTC_041 !!!");
-
 	}
+	
+	@Test(priority = 2, enabled = true)
+	public void studentToSubscribeCourseTakeTest_ELTC_042() throws InterruptedException, IOException {
+		
+		String studentUserName = properties.getProperty("studentUserName");
+		String studentPwd = properties.getProperty("studentPwd");
+		String searchCourseName=properties.getProperty("searchCourseName2");
+		String expAssessmentQue1=properties.getProperty("assessmentQuestion1");
+		String expAssessmentQue2=properties.getProperty("assessmentQuestion2");
+		screenShotWeek2 = new ScreenShotWeek2(driver);
+		String tcNumber="ELTC_042";
+		
+		elearningPOMWeek2.login(studentUserName,studentPwd);
+		Thread.sleep(4000);
+		
+		elearningPOMWeek2.searchAndSubscribeCourse(searchCourseName,tcNumber);
+		Thread.sleep(4000);
+	
+		elearningPOMWeek2.clickMyCourses();
+		Thread.sleep(4000);
+		
+		elearningPOMWeek2.clickSelectAssessmentCourse();
+		Thread.sleep(4000);
+		
+		elearningPOMWeek2.clickAssessmentIcon();
+		Thread.sleep(4000);
+		screenShotWeek2.captureScreenShot("ELTC_042_01");
+		boolean actAssessmentLinkDisplayed=elearningPOMWeek2.isDisplayedAssessmentLink();
+		Assert.assertEquals(actAssessmentLinkDisplayed, true);
+		System.out.println("Assessment link should get displayed - verified");
+		
+		elearningPOMWeek2.clickAssessmentLink();
+		Thread.sleep(4000);
+		screenShotWeek2.captureScreenShot("ELTC_042_02");
+		boolean actStartTestDisplayed=elearningPOMWeek2.isDisplayedStartTest();
+		Assert.assertEquals(actStartTestDisplayed, true);
+		System.out.println("Start Test button should get displayed - verified");
+		
+		elearningPOMWeek2.clickStartTest();
+		Thread.sleep(4000);
+		screenShotWeek2.captureScreenShot("ELTC_042_01");
+		String actAssessmentQue1=elearningPOMWeek2.getAssessmentQuestion1();
+		Assert.assertEquals(actAssessmentQue1, expAssessmentQue1);
+		System.out.println("Question 1 displayed - verified");
+		
+		elearningPOMWeek2.clickAssessmentQue1Ans();
+		Thread.sleep(4000);
+		screenShotWeek2.captureScreenShot("ELTC_042_02");
+		System.out.println("Answer selected for Question 1");
+		
+		elearningPOMWeek2.clickNextQue();
+		Thread.sleep(4000);
+		screenShotWeek2.captureScreenShot("ELTC_042_03");
+		String actAssessmentQue2=elearningPOMWeek2.getAssessmentQuestion2();
+		Assert.assertEquals(actAssessmentQue2, expAssessmentQue2);
+		System.out.println("Question 2 displayed - verified");
+		
+		elearningPOMWeek2.clickAssessmentQue2Ans();
+		Thread.sleep(4000);
+		screenShotWeek2.captureScreenShot("ELTC_042_04");
+		System.out.println("Answer selected for Question 2");
+		
+		elearningPOMWeek2.clickEndButton();
+		Thread.sleep(4000);
+		screenShotWeek2.captureScreenShot("ELTC_042_05");
+		boolean actAssessmentResultDisplayed=elearningPOMWeek2.isDisplayedTestResult();
+		Assert.assertEquals(actAssessmentResultDisplayed, true);
+		System.out.println("Test Result should get displayed - verified");
+				
+		System.out.println("End of Test Case ELTC_042 !!!");
+		}
 }

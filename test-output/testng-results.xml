@@ -2,52 +2,52 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="159429" started-at="2019-12-09T22:09:10 IST" finished-at="2019-12-09T22:11:49 IST">
+  <suite name="Default suite" duration-ms="359710" started-at="2019-12-13T01:34:37 IST" finished-at="2019-12-13T01:40:37 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="159429" started-at="2019-12-09T22:09:10 IST" finished-at="2019-12-09T22:11:49 IST">
-      <class name="week1.ElearningTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:week1.ElearningTest@79be0360]" name="setUpBeforeClass" is-config="true" duration-ms="18" started-at="2019-12-09T22:09:10 IST" finished-at="2019-12-09T22:09:10 IST">
+    <test name="Default test" duration-ms="359710" started-at="2019-12-13T01:34:37 IST" finished-at="2019-12-13T01:40:37 IST">
+      <class name="week2.ElearningTestWeek2">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:week2.ElearningTestWeek2@79be0360]" name="setUpBeforeClass" is-config="true" duration-ms="18" started-at="2019-12-13T01:34:37 IST" finished-at="2019-12-13T01:34:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:week1.ElearningTest@79be0360]" name="setUp" is-config="true" duration-ms="29338" started-at="2019-12-09T22:09:10 IST" finished-at="2019-12-09T22:09:39 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:week2.ElearningTestWeek2@79be0360]" name="setUp" is-config="true" duration-ms="21557" started-at="2019-12-13T01:34:37 IST" finished-at="2019-12-13T01:34:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registerForCourse_ELTC_013()[pri:0, instance:week1.ElearningTest@79be0360]" name="registerForCourse_ELTC_013" duration-ms="24467" started-at="2019-12-09T22:09:39 IST" finished-at="2019-12-09T22:10:03 IST">
+        <test-method status="PASS" signature="teacherToAddprojectDetails_ELTC_040()[pri:0, instance:week2.ElearningTestWeek2@79be0360]" name="teacherToAddprojectDetails_ELTC_040" duration-ms="117973" started-at="2019-12-13T01:34:59 IST" finished-at="2019-12-13T01:36:57 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registerForCourse_ELTC_013 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:week1.ElearningTest@79be0360]" name="tearDown" is-config="true" duration-ms="1851" started-at="2019-12-09T22:10:03 IST" finished-at="2019-12-09T22:10:05 IST">
+        </test-method> <!-- teacherToAddprojectDetails_ELTC_040 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:week2.ElearningTestWeek2@79be0360]" name="tearDown" is-config="true" duration-ms="2020" started-at="2019-12-13T01:36:57 IST" finished-at="2019-12-13T01:36:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:week1.ElearningTest@79be0360]" name="setUp" is-config="true" duration-ms="27233" started-at="2019-12-09T22:10:05 IST" finished-at="2019-12-09T22:10:33 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:week2.ElearningTestWeek2@79be0360]" name="setUp" is-config="true" duration-ms="18847" started-at="2019-12-13T01:36:59 IST" finished-at="2019-12-13T01:37:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="displayRegisteredCourseDetails_ELTC_014()[pri:1, instance:week1.ElearningTest@79be0360]" name="displayRegisteredCourseDetails_ELTC_014" duration-ms="27707" started-at="2019-12-09T22:10:33 IST" finished-at="2019-12-09T22:11:00 IST">
+        <test-method status="PASS" signature="studentToSubscribeCourseTakeTest_ELTC_041()[pri:1, instance:week2.ElearningTestWeek2@79be0360]" name="studentToSubscribeCourseTakeTest_ELTC_041" duration-ms="87711" started-at="2019-12-13T01:37:18 IST" finished-at="2019-12-13T01:38:45 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- displayRegisteredCourseDetails_ELTC_014 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:week1.ElearningTest@79be0360]" name="tearDown" is-config="true" duration-ms="1827" started-at="2019-12-09T22:11:00 IST" finished-at="2019-12-09T22:11:02 IST">
+        </test-method> <!-- studentToSubscribeCourseTakeTest_ELTC_041 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:week2.ElearningTestWeek2@79be0360]" name="tearDown" is-config="true" duration-ms="2043" started-at="2019-12-13T01:38:45 IST" finished-at="2019-12-13T01:38:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:week1.ElearningTest@79be0360]" name="setUp" is-config="true" duration-ms="27181" started-at="2019-12-09T22:11:02 IST" finished-at="2019-12-09T22:11:29 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:week2.ElearningTestWeek2@79be0360]" name="setUp" is-config="true" duration-ms="18943" started-at="2019-12-13T01:38:47 IST" finished-at="2019-12-13T01:39:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="logoutTest_ELTC_015()[pri:2, instance:week1.ElearningTest@79be0360]" name="logoutTest_ELTC_015" duration-ms="17917" started-at="2019-12-09T22:11:29 IST" finished-at="2019-12-09T22:11:47 IST">
+        <test-method status="PASS" signature="studentToSubscribeCourseTakeTest_ELTC_042()[pri:2, instance:week2.ElearningTestWeek2@79be0360]" name="studentToSubscribeCourseTakeTest_ELTC_042" duration-ms="88558" started-at="2019-12-13T01:39:06 IST" finished-at="2019-12-13T01:40:35 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logoutTest_ELTC_015 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:week1.ElearningTest@79be0360]" name="tearDown" is-config="true" duration-ms="1820" started-at="2019-12-09T22:11:47 IST" finished-at="2019-12-09T22:11:49 IST">
+        </test-method> <!-- studentToSubscribeCourseTakeTest_ELTC_042 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:week2.ElearningTestWeek2@79be0360]" name="tearDown" is-config="true" duration-ms="1978" started-at="2019-12-13T01:40:35 IST" finished-at="2019-12-13T01:40:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- week1.ElearningTest -->
+      </class> <!-- week2.ElearningTestWeek2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
