@@ -161,6 +161,60 @@ public class ElearningPOMWeek2 {
 	@FindBy(xpath = "//h3[contains(text(),'Result')]")
 	private WebElement testResult;
 	
+	//Locators for ELTC_042
+	
+	@FindBy(xpath = "//a[contains(text(),'Project Week2 course')]")
+	private WebElement selectAssessmentCourse;
+	
+	@FindBy(xpath = "//a[@id='istooldesc_11646']")
+	private WebElement assessmentIcon;
+	
+	@FindBy(xpath = "//a[contains(text(),'Intermediate test')]")
+	private WebElement assessmentLink;
+	
+	@FindBy(xpath = "//strong[contains(text(),'1. What is the scripting language used in Selenium')]")
+	private WebElement assessmentQue1;
+
+	@FindBy(xpath = "//strong[contains(text(),'2. What is the default port number of Selenium gri')]")
+	private WebElement assessmentQue2;
+	
+	@FindBy(xpath = "//input[@id='choice-191-1']")
+	private WebElement assessmentQue1Ans;
+	
+	@FindBy(xpath = "//input[@id='choice-192-3']")
+	private WebElement assessmentQue2Ans;
+	//Functions for ECTC_042
+	public void clickSelectAssessmentCourse() {
+		this.selectAssessmentCourse.click();
+	}
+		
+	public void clickAssessmentIcon() {
+		this.assessmentIcon.click();
+	}
+	
+	public boolean isDisplayedAssessmentLink() {
+		return this.assessmentLink.isDisplayed();
+	}
+	
+	public void clickAssessmentLink() {
+		this.assessmentLink.click();
+	}
+	
+	public void clickAssessmentQue1Ans() {
+		this.assessmentQue1Ans.click();
+	}
+	
+	public void clickAssessmentQue2Ans() {
+		this.assessmentQue2Ans.click();
+	}
+	
+	public String getAssessmentQuestion1() {
+		return this.assessmentQue1.getText();
+	}
+	public String getAssessmentQuestion2() {
+		return this.assessmentQue2.getText();
+	}
+	
 	//Functions for studentToSubscribeCourseTakeTest_ELTC_041
 
 	public void clickMyCourses() {
@@ -374,7 +428,7 @@ public class ElearningPOMWeek2 {
 		clickLoginBtn();
 	}
 
-	public void searchAndSubscribeCourse(String searchCourseName) throws IOException, InterruptedException {
+	public void searchAndSubscribeCourse(String searchCourseName,String tcNumber) throws IOException, InterruptedException {
 		Properties properties = new Properties();
 		FileInputStream inStream = new FileInputStream("./resources/othersWeek2.properties");
 		properties.load(inStream);
@@ -386,7 +440,9 @@ public class ElearningPOMWeek2 {
 
 		elearningPOM.clickCourseCatalogbtn();
 		Thread.sleep(5000);
-		screenShotWeek2.captureScreenShot("Course Catalog page");
+		String screenshotName1="Course catalog page_";
+		String screenshotFilename1=screenshotName1+tcNumber;
+		screenShotWeek2.captureScreenShot(screenshotFilename1);
 		String actCourseCatalogPage = elearningPOM.getCourseCatalogPage();
 		Assert.assertEquals(actCourseCatalogPage, expCourseCatalogPage);
 		System.out.println("Course catalog page displayed - verified");
@@ -396,7 +452,9 @@ public class ElearningPOMWeek2 {
 
 		elearningPOM.clickSearchBtn();
 		Thread.sleep(2000);
-		screenShotWeek2.captureScreenShot("Course search result page");
+		String screenshotName2="Course search result page_";
+		String screenshotFilename2=screenshotName2+tcNumber;
+		screenShotWeek2.captureScreenShot(screenshotFilename2);
 		String actSearchResult = elearningPOM.getSearchResult();
 		boolean srchResult = actSearchResult.contains(expSearchResult);
 		Assert.assertEquals(srchResult, true);
@@ -404,7 +462,9 @@ public class ElearningPOMWeek2 {
 
 		elearningPOM.clickSelectCourse();
 		Thread.sleep(5000);
-		screenShotWeek2.captureScreenShot("Course Subscribed Msg");
+		String screenshotName3="Course Subscribed Msg_";
+		String screenshotFilename3=screenshotName3+tcNumber;
+		screenShotWeek2.captureScreenShot(screenshotFilename3);
 		String actualCourseConfirmationMsg = elearningPOM.getConfirmationMsg();
 		boolean courseRegistered = actualCourseConfirmationMsg.contains(expectedCourseConfirmationMsg);
 		Assert.assertEquals(courseRegistered, true);
