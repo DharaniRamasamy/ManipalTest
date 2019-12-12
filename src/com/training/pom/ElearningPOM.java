@@ -37,14 +37,21 @@ public class ElearningPOM {
 	@FindBy(linkText="Course catalog")
 	private WebElement courseCatalogbtn;
 	
+	@FindBy(xpath="//h2[@class='title-courses']")
+	private WebElement courseCatalogPage;
+		
 	@FindBy(name="search_term")
 	private WebElement searchTextBox;
 	
 	@FindBy(xpath="//div[@class='input-group']//button[1]")
 	private WebElement searchBtn;
 	
+	@FindBy(xpath="//strong[contains(text(),'Search results for')]")
+	private WebElement searchResult;
+		
 	@FindBy(xpath="//div[*]//div[1]//div[2]//div[4]//div[1]//a[1]")
 	private WebElement selectCourse;
+		
 	
 	@FindBy(xpath="/html[1]/body[1]/main[1]/section[1]/div[1]/div[2]")
 	private WebElement courseConfirmationMsg;
@@ -144,5 +151,15 @@ public class ElearningPOM {
 	{
 		return this.courseDetails2.getText();
 	}
+	public String getCourseCatalogPage()
+	{
+		return this.courseCatalogPage.getText();
+	}
+	public String getSearchResult()
+	{
+		return this.searchResult.getText();
+	}
+	
+	
 	
 }
