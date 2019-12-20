@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="week2.ElearningTestWeek2">
+      <class name="week3.ElearningTestWeek3">
         <methods>
-          <include name="setUp"/>
-          <include name="studentToSubscribeCourseTakeTest_ELTC_041"/>
           <include name="tearDown"/>
+          <include name="testCase_ELTC_071"/>
+          <include name="setUp"/>
           <include name="setUpBeforeClass"/>
         </methods>
-      </class> <!-- week2.ElearningTestWeek2 -->
+      </class> <!-- week3.ElearningTestWeek3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
